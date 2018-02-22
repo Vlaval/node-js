@@ -1,0 +1,6 @@
+--reporter spec
+--colors
+--timeout 100000
+--require should
+--require co-mocha
+--recursive

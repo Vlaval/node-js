@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "7"
+#
+# cache:
+#   directories:
+#     - node_modules # could invalidate via API request/website
+#
+services:
+  - mongodb
+  - redis-server
+
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: 'API_KEY_THERE'
+#   app: # different branches push to different deploy targets
+#     master: my-app-staging
+#     production: my-app-production
+#
+# # deploy anywhere
+# after_success:
+#  - gulp deploy

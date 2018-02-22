@@ -1,0 +1,11 @@
+
+1. регистрация с подтверждением
+  generateToken() - uuid
+  User.create({ token, confirmed: false })
+
+  send letter (url: application: verify/:token)
+
+  verify/:token -> User.confirmed = true;
+  login()
+
+2. добавить социальную сеть для аутентификации пользователя
